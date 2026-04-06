@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-Hans" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SnapNote 隐私政策</title>
+  <style>:root {
+  color-scheme: light dark;
+  --bg: #f4f7fb;
+  --panel: rgba(255,255,255,0.88);
+  --card: #ffffff;
+  --text: #162033;
+  --muted: #5a667a;
+  --line: rgba(22,32,51,0.10);
+  --accent: #1273ea;
+  --accent-soft: rgba(18,115,234,0.10);
+  --shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1724;
+    --panel: rgba(17,24,39,0.88);
+    --card: #121a29;
+    --text: #edf2ff;
+    --muted: #a7b1c4;
+    --line: rgba(255,255,255,0.10);
+    --accent: #6bb6ff;
+    --accent-soft: rgba(107,182,255,0.16);
+    --shadow: 0 20px 60px rgba(0,0,0,0.30);
+  }
+}
+* { box-sizing: border-box; }
+html { font-size: 16px; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans", "Noto Sans", sans-serif; background: radial-gradient(circle at top left, rgba(18,115,234,0.16), transparent 34%), radial-gradient(circle at bottom right, rgba(12,163,121,0.12), transparent 28%), var(--bg); color: var(--text); }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrapper { width: min(960px, calc(100% - 32px)); margin: 0 auto; padding: 32px 0 56px; }
+.hero { background: var(--panel); backdrop-filter: blur(14px); border: 1px solid var(--line); border-radius: 24px; padding: 28px; box-shadow: var(--shadow); }
+.badge { display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); font-size: 0.92rem; font-weight: 700; }
+h1 { margin: 18px 0 10px; font-size: clamp(2rem, 4vw, 3rem); line-height: 1.12; }
+.lead { margin: 0; color: var(--muted); font-size: 1.02rem; line-height: 1.75; }
+.meta { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-top: 22px; }
+.meta-item, .section { background: var(--card); border: 1px solid var(--line); border-radius: 20px; box-shadow: var(--shadow); }
+.meta-item { padding: 16px 18px; }
+.meta-item strong { display: block; font-size: 0.82rem; color: var(--muted); margin-bottom: 8px; }
+.content { display: grid; gap: 16px; margin-top: 20px; }
+.section { padding: 22px; }
+.section h2 { margin: 0 0 12px; font-size: 1.18rem; }
+.section ul { margin: 0; padding-inline-start: 1.2rem; }
+.section li { margin: 0 0 10px; line-height: 1.75; color: var(--muted); white-space: pre-line; }
+.footer-link { margin-top: 18px; display: inline-flex; align-items: center; gap: 8px; color: var(--muted); }
+.index-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; margin-top: 20px; }
+.lang-card { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 20px; box-shadow: var(--shadow); }
+.lang-card h2 { margin: 0 0 12px; font-size: 1.12rem; }
+.link-row { display: flex; flex-wrap: wrap; gap: 10px; }
+.link-chip { display: inline-flex; align-items: center; padding: 10px 14px; border-radius: 999px; background: var(--accent-soft); font-weight: 600; }
+.small { color: var(--muted); font-size: 0.95rem; line-height: 1.7; }
+html[dir="rtl"] body, html[dir="rtl"] .section li, html[dir="rtl"] .lead, html[dir="rtl"] .small { text-align: right; }
+@media (max-width: 640px) { .wrapper { width: min(100% - 20px, 960px); padding: 18px 0 36px; } .hero, .section, .meta-item, .lang-card { border-radius: 18px; } .hero { padding: 22px; } .section { padding: 18px; } }</style>
+</head>
+<body>
+  <main class="wrapper">
+    <section class="hero">
+      <span class="badge">SnapNote</span>
+      <h1>SnapNote 隐私政策</h1>
+      <p class="lead">SnapNote 是一款本地优先、轻量简洁的笔记应用。默认情况下，笔记内容和附件保存在你的设备本机；你可以在不登录账号的情况下使用核心记录功能。</p>
+      <div class="meta">
+        <div class="meta-item"><strong>更新日期</strong>2026-04-06</div>
+        <div class="meta-item"><strong>运营主体</strong>智子科技（三河）有限公司</div>
+        <div class="meta-item"><strong>支持邮箱</strong><a href="mailto:support@geeker.net.cn">support@geeker.net.cn</a></div>
+      </div>
+    </section>
+    <div class="content"><section class="section"><h2>本地优先与数据保存</h2><ul><li>SnapNote 默认将笔记数据保存在设备本机，以便在离线状态下也能正常记录、整理和查看内容。</li><li>当前版本的核心数据包括笔记标题、正文、标签、星标状态、归档状态以及与这些内容相关的本地设置。</li></ul></section>
+<section class="section"><h2>可选的 iCloud 同步</h2><ul><li>iCloud 同步是可选功能，只有在你主动开启后，SnapNote 才会使用 Apple 提供的 iCloud 能力同步相关数据。</li><li>当前版本同步的主要是文字笔记相关内容，例如标题、正文、标签、星标状态和归档状态。</li><li>如果你没有开启 iCloud，同步不会启动，应用会继续以本地模式运行。</li></ul></section>
+<section class="section"><h2>附件处理方式</h2><ul><li>图片、文档等附件默认保留在本机存储中，不会随着 iCloud 自动上传。</li><li>这样做是为了保持本地优先体验，并让附件的存储体积、上传行为和网络使用更加可控。</li></ul></section>
+<section class="section"><h2>权限说明</h2><ul><li>相机权限用于拍摄照片并把照片作为本地附件加入当前笔记。</li><li>照片权限用于从系统照片库选择图片，并作为本地附件加入笔记。</li><li>文件访问用于通过系统文件选择器导入你主动选择的文件；SnapNote 不会在后台扫描你的文件。</li><li>通知权限用于提醒、回顾提示或相关通知功能；默认不会在首次打开时一次性强制索取。</li><li>Face ID / Touch ID 用于启用应用锁，在本机上保护笔记访问。生物识别数据由系统安全区域处理，SnapNote 不会读取或保存你的指纹或面容数据。</li></ul></section>
+<section class="section"><h2>按需申请权限</h2><ul><li>SnapNote 不会在首次打开时一次性申请所有权限。</li><li>只有当你使用拍照、导入照片、启用提醒或开启应用锁等对应功能时，才会请求相关权限。</li></ul></section>
+<section class="section"><h2>你的控制权</h2><ul><li>你可以随时在系统设置中关闭相机、照片、通知或生物识别权限。</li><li>你也可以在 App 内关闭 iCloud 同步、关闭应用锁，或根据需要删除笔记与附件。</li></ul></section>
+<section class="section"><h2>信息共享与出售</h2><ul><li>SnapNote 不会出售你的个人信息。</li><li>当前版本遵循本地优先设计，不以广告系统或账号系统为前提来提供核心笔记功能。</li></ul></section>
+<section class="section"><h2>联系我们</h2><ul><li>如果你对本隐私政策或 SnapNote 的数据处理方式有疑问，请通过 support@geeker.net.cn 联系我们。</li></ul></section></div>
+    <a class="footer-link" href="index.html">&#8592; 返回文档索引</a>
+  </main>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de privacidad de SnapNote</title>
+  <style>:root {
+  color-scheme: light dark;
+  --bg: #f4f7fb;
+  --panel: rgba(255,255,255,0.88);
+  --card: #ffffff;
+  --text: #162033;
+  --muted: #5a667a;
+  --line: rgba(22,32,51,0.10);
+  --accent: #1273ea;
+  --accent-soft: rgba(18,115,234,0.10);
+  --shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1724;
+    --panel: rgba(17,24,39,0.88);
+    --card: #121a29;
+    --text: #edf2ff;
+    --muted: #a7b1c4;
+    --line: rgba(255,255,255,0.10);
+    --accent: #6bb6ff;
+    --accent-soft: rgba(107,182,255,0.16);
+    --shadow: 0 20px 60px rgba(0,0,0,0.30);
+  }
+}
+* { box-sizing: border-box; }
+html { font-size: 16px; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans", "Noto Sans", sans-serif; background: radial-gradient(circle at top left, rgba(18,115,234,0.16), transparent 34%), radial-gradient(circle at bottom right, rgba(12,163,121,0.12), transparent 28%), var(--bg); color: var(--text); }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrapper { width: min(960px, calc(100% - 32px)); margin: 0 auto; padding: 32px 0 56px; }
+.hero { background: var(--panel); backdrop-filter: blur(14px); border: 1px solid var(--line); border-radius: 24px; padding: 28px; box-shadow: var(--shadow); }
+.badge { display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); font-size: 0.92rem; font-weight: 700; }
+h1 { margin: 18px 0 10px; font-size: clamp(2rem, 4vw, 3rem); line-height: 1.12; }
+.lead { margin: 0; color: var(--muted); font-size: 1.02rem; line-height: 1.75; }
+.meta { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-top: 22px; }
+.meta-item, .section { background: var(--card); border: 1px solid var(--line); border-radius: 20px; box-shadow: var(--shadow); }
+.meta-item { padding: 16px 18px; }
+.meta-item strong { display: block; font-size: 0.82rem; color: var(--muted); margin-bottom: 8px; }
+.content { display: grid; gap: 16px; margin-top: 20px; }
+.section { padding: 22px; }
+.section h2 { margin: 0 0 12px; font-size: 1.18rem; }
+.section ul { margin: 0; padding-inline-start: 1.2rem; }
+.section li { margin: 0 0 10px; line-height: 1.75; color: var(--muted); white-space: pre-line; }
+.footer-link { margin-top: 18px; display: inline-flex; align-items: center; gap: 8px; color: var(--muted); }
+.index-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; margin-top: 20px; }
+.lang-card { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 20px; box-shadow: var(--shadow); }
+.lang-card h2 { margin: 0 0 12px; font-size: 1.12rem; }
+.link-row { display: flex; flex-wrap: wrap; gap: 10px; }
+.link-chip { display: inline-flex; align-items: center; padding: 10px 14px; border-radius: 999px; background: var(--accent-soft); font-weight: 600; }
+.small { color: var(--muted); font-size: 0.95rem; line-height: 1.7; }
+html[dir="rtl"] body, html[dir="rtl"] .section li, html[dir="rtl"] .lead, html[dir="rtl"] .small { text-align: right; }
+@media (max-width: 640px) { .wrapper { width: min(100% - 20px, 960px); padding: 18px 0 36px; } .hero, .section, .meta-item, .lang-card { border-radius: 18px; } .hero { padding: 22px; } .section { padding: 18px; } }</style>
+</head>
+<body>
+  <main class="wrapper">
+    <section class="hero">
+      <span class="badge">SnapNote</span>
+      <h1>Política de privacidad de SnapNote</h1>
+      <p class="lead">SnapNote es una aplicación de notas ligera y local-first. De forma predeterminada, las notas y los archivos adjuntos se guardan en tu dispositivo, y las funciones principales pueden usarse sin cuenta.</p>
+      <div class="meta">
+        <div class="meta-item"><strong>Fecha de actualización</strong>2026-04-06</div>
+        <div class="meta-item"><strong>Entidad operadora</strong>智子科技（三河）有限公司</div>
+        <div class="meta-item"><strong>Correo de soporte</strong><a href="mailto:support@geeker.net.cn">support@geeker.net.cn</a></div>
+      </div>
+    </section>
+    <div class="content"><section class="section"><h2>Almacenamiento local por defecto</h2><ul><li>SnapNote guarda por defecto los datos de las notas en el dispositivo para que puedas escribir, organizar y revisar contenido incluso sin conexión.</li><li>En la versión actual, los datos principales incluyen el título, el cuerpo de la nota, las etiquetas, el estado de destacado, el estado de archivado y los ajustes locales relacionados.</li></ul></section>
+<section class="section"><h2>Sincronización opcional con iCloud</h2><ul><li>La sincronización con iCloud es opcional. SnapNote solo utiliza iCloud si tú decides activarlo.</li><li>En la versión actual, lo que se sincroniza principalmente son los datos de texto de las notas, como título, contenido, etiquetas, estado de destacado y estado de archivado.</li><li>Si no activas iCloud, la sincronización no se inicia y la app sigue funcionando de forma local.</li></ul></section>
+<section class="section"><h2>Archivos adjuntos</h2><ul><li>Las imágenes, documentos y otros archivos adjuntos permanecen por defecto en el dispositivo y no se suben automáticamente a iCloud.</li><li>Esto ayuda a mantener la lógica local-first y a controlar mejor el espacio ocupado, el uso de red y el comportamiento de carga.</li></ul></section>
+<section class="section"><h2>Uso de permisos</h2><ul><li>La cámara se usa para tomar una foto y añadirla como archivo adjunto local a la nota actual.</li><li>Fotos se usa para seleccionar una imagen de la fototeca y añadirla a una nota como archivo adjunto local.</li><li>Archivos se usa para importar solo los archivos que tú eliges mediante el selector del sistema; SnapNote no analiza tus archivos en segundo plano.</li><li>Las notificaciones se usan para recordatorios, avisos de repaso y funciones relacionadas; la app no solicita todos los permisos de una sola vez al abrirse por primera vez.</li><li>Face ID / Touch ID se usa para activar el bloqueo de la app y proteger el acceso a las notas en el dispositivo. Los datos biométricos son gestionados por el sistema; SnapNote no lee ni almacena tu rostro ni tu huella.</li></ul></section>
+<section class="section"><h2>Permisos bajo demanda</h2><ul><li>SnapNote no pide todos los permisos al abrirse por primera vez.</li><li>Cada permiso se solicita solo cuando utilizas la función correspondiente, por ejemplo tomar una foto, importar imágenes, activar recordatorios o habilitar el bloqueo de la app.</li></ul></section>
+<section class="section"><h2>Tu control</h2><ul><li>Puedes desactivar en cualquier momento el acceso a cámara, fotos, notificaciones o biometría desde los ajustes del sistema.</li><li>Dentro de la app también puedes desactivar la sincronización con iCloud, desactivar el bloqueo de la app o eliminar notas y adjuntos según lo necesites.</li></ul></section>
+<section class="section"><h2>Compartición y venta de datos</h2><ul><li>SnapNote no vende tu información personal.</li><li>La versión actual sigue una filosofía local-first y no depende de un sistema de anuncios ni de cuentas para ofrecer sus funciones principales.</li></ul></section>
+<section class="section"><h2>Contacto</h2><ul><li>Si tienes dudas sobre esta política o sobre cómo SnapNote trata los datos, escríbenos a support@geeker.net.cn.</li></ul></section></div>
+    <a class="footer-link" href="index.html">&#8592; Volver al índice de documentos</a>
+  </main>
+</body>
+</html>

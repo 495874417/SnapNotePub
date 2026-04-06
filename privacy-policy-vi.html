@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chính sách quyền riêng tư của SnapNote</title>
+  <style>:root {
+  color-scheme: light dark;
+  --bg: #f4f7fb;
+  --panel: rgba(255,255,255,0.88);
+  --card: #ffffff;
+  --text: #162033;
+  --muted: #5a667a;
+  --line: rgba(22,32,51,0.10);
+  --accent: #1273ea;
+  --accent-soft: rgba(18,115,234,0.10);
+  --shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1724;
+    --panel: rgba(17,24,39,0.88);
+    --card: #121a29;
+    --text: #edf2ff;
+    --muted: #a7b1c4;
+    --line: rgba(255,255,255,0.10);
+    --accent: #6bb6ff;
+    --accent-soft: rgba(107,182,255,0.16);
+    --shadow: 0 20px 60px rgba(0,0,0,0.30);
+  }
+}
+* { box-sizing: border-box; }
+html { font-size: 16px; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans", "Noto Sans", sans-serif; background: radial-gradient(circle at top left, rgba(18,115,234,0.16), transparent 34%), radial-gradient(circle at bottom right, rgba(12,163,121,0.12), transparent 28%), var(--bg); color: var(--text); }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrapper { width: min(960px, calc(100% - 32px)); margin: 0 auto; padding: 32px 0 56px; }
+.hero { background: var(--panel); backdrop-filter: blur(14px); border: 1px solid var(--line); border-radius: 24px; padding: 28px; box-shadow: var(--shadow); }
+.badge { display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); font-size: 0.92rem; font-weight: 700; }
+h1 { margin: 18px 0 10px; font-size: clamp(2rem, 4vw, 3rem); line-height: 1.12; }
+.lead { margin: 0; color: var(--muted); font-size: 1.02rem; line-height: 1.75; }
+.meta { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-top: 22px; }
+.meta-item, .section { background: var(--card); border: 1px solid var(--line); border-radius: 20px; box-shadow: var(--shadow); }
+.meta-item { padding: 16px 18px; }
+.meta-item strong { display: block; font-size: 0.82rem; color: var(--muted); margin-bottom: 8px; }
+.content { display: grid; gap: 16px; margin-top: 20px; }
+.section { padding: 22px; }
+.section h2 { margin: 0 0 12px; font-size: 1.18rem; }
+.section ul { margin: 0; padding-inline-start: 1.2rem; }
+.section li { margin: 0 0 10px; line-height: 1.75; color: var(--muted); white-space: pre-line; }
+.footer-link { margin-top: 18px; display: inline-flex; align-items: center; gap: 8px; color: var(--muted); }
+.index-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; margin-top: 20px; }
+.lang-card { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 20px; box-shadow: var(--shadow); }
+.lang-card h2 { margin: 0 0 12px; font-size: 1.12rem; }
+.link-row { display: flex; flex-wrap: wrap; gap: 10px; }
+.link-chip { display: inline-flex; align-items: center; padding: 10px 14px; border-radius: 999px; background: var(--accent-soft); font-weight: 600; }
+.small { color: var(--muted); font-size: 0.95rem; line-height: 1.7; }
+html[dir="rtl"] body, html[dir="rtl"] .section li, html[dir="rtl"] .lead, html[dir="rtl"] .small { text-align: right; }
+@media (max-width: 640px) { .wrapper { width: min(100% - 20px, 960px); padding: 18px 0 36px; } .hero, .section, .meta-item, .lang-card { border-radius: 18px; } .hero { padding: 22px; } .section { padding: 18px; } }</style>
+</head>
+<body>
+  <main class="wrapper">
+    <section class="hero">
+      <span class="badge">SnapNote</span>
+      <h1>Chính sách quyền riêng tư của SnapNote</h1>
+      <p class="lead">SnapNote là ứng dụng ghi chú ưu tiên lưu cục bộ, gọn nhẹ và đơn giản. Theo mặc định, nội dung ghi chú và tệp đính kèm được lưu trên thiết bị của bạn; các chức năng chính có thể dùng mà không cần tài khoản.</p>
+      <div class="meta">
+        <div class="meta-item"><strong>Ngày cập nhật</strong>2026-04-06</div>
+        <div class="meta-item"><strong>Đơn vị vận hành</strong>智子科技（三河）有限公司</div>
+        <div class="meta-item"><strong>Email hỗ trợ</strong><a href="mailto:support@geeker.net.cn">support@geeker.net.cn</a></div>
+      </div>
+    </section>
+    <div class="content"><section class="section"><h2>Lưu cục bộ theo mặc định</h2><ul><li>SnapNote mặc định lưu dữ liệu ghi chú trên thiết bị để bạn vẫn có thể ghi, sắp xếp và xem nội dung khi ngoại tuyến.</li><li>Trong phiên bản hiện tại, dữ liệu chính bao gồm tiêu đề, nội dung, thẻ, trạng thái gắn sao, trạng thái lưu trữ và các thiết lập cục bộ liên quan.</li></ul></section>
+<section class="section"><h2>Đồng bộ iCloud là tùy chọn</h2><ul><li>Đồng bộ iCloud là tính năng tùy chọn. SnapNote chỉ dùng khả năng iCloud của Apple khi bạn chủ động bật.</li><li>Phiên bản hiện tại chủ yếu đồng bộ nội dung ghi chú dạng văn bản như tiêu đề, nội dung, thẻ, trạng thái gắn sao và trạng thái lưu trữ.</li><li>Nếu bạn không bật iCloud, việc đồng bộ sẽ không bắt đầu và ứng dụng tiếp tục hoạt động ở chế độ cục bộ.</li></ul></section>
+<section class="section"><h2>Cách xử lý tệp đính kèm</h2><ul><li>Ảnh, tài liệu và các tệp đính kèm khác mặc định được giữ trên thiết bị và không tự động tải lên iCloud.</li><li>Thiết kế này giúp duy trì trải nghiệm ưu tiên cục bộ và cho phép bạn kiểm soát tốt hơn dung lượng, hành vi tải lên và việc sử dụng mạng.</li></ul></section>
+<section class="section"><h2>Mục đích của quyền truy cập</h2><ul><li>Camera dùng để chụp ảnh và thêm ảnh đó làm tệp đính kèm cục bộ cho ghi chú hiện tại.</li><li>Ảnh dùng để chọn hình từ thư viện ảnh hệ thống và thêm vào ghi chú như tệp đính kèm cục bộ.</li><li>Tệp dùng để nhập các tệp mà bạn tự chọn qua bộ chọn tệp của hệ thống; SnapNote không quét tệp của bạn trong nền.</li><li>Thông báo dùng cho lời nhắc, nhắc xem lại hoặc các chức năng thông báo liên quan; ứng dụng không ép xin toàn bộ quyền ngay khi mở lần đầu.</li><li>Face ID / Touch ID dùng để bật khóa ứng dụng và bảo vệ việc truy cập ghi chú trên thiết bị. Dữ liệu sinh trắc học do hệ thống xử lý; SnapNote không đọc hoặc lưu khuôn mặt hay vân tay của bạn.</li></ul></section>
+<section class="section"><h2>Chỉ xin quyền khi cần</h2><ul><li>SnapNote không yêu cầu tất cả quyền ngay lần mở đầu tiên.</li><li>Quyền chỉ được yêu cầu khi bạn dùng chức năng tương ứng như chụp ảnh, nhập ảnh, bật thông báo hoặc bật khóa ứng dụng.</li></ul></section>
+<section class="section"><h2>Quyền kiểm soát của bạn</h2><ul><li>Bạn có thể tắt quyền camera, ảnh, thông báo hoặc sinh trắc học bất cứ lúc nào trong phần cài đặt hệ thống.</li><li>Bạn cũng có thể tắt đồng bộ iCloud, tắt khóa ứng dụng trong SnapNote hoặc xóa ghi chú và tệp đính kèm khi cần.</li></ul></section>
+<section class="section"><h2>Chia sẻ và bán dữ liệu</h2><ul><li>SnapNote không bán thông tin cá nhân của bạn.</li><li>Phiên bản hiện tại đi theo định hướng ưu tiên cục bộ và không lấy hệ thống quảng cáo hoặc tài khoản làm điều kiện cho tính năng ghi chú cốt lõi.</li></ul></section>
+<section class="section"><h2>Liên hệ</h2><ul><li>Nếu bạn có câu hỏi về chính sách này hoặc cách SnapNote xử lý dữ liệu, vui lòng liên hệ support@geeker.net.cn.</li></ul></section></div>
+    <a class="footer-link" href="index.html">&#8592; Quay lại trang chỉ mục</a>
+  </main>
+</body>
+</html>

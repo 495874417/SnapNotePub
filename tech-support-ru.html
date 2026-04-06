@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Техническая поддержка SnapNote</title>
+  <style>:root {
+  color-scheme: light dark;
+  --bg: #f4f7fb;
+  --panel: rgba(255,255,255,0.88);
+  --card: #ffffff;
+  --text: #162033;
+  --muted: #5a667a;
+  --line: rgba(22,32,51,0.10);
+  --accent: #1273ea;
+  --accent-soft: rgba(18,115,234,0.10);
+  --shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1724;
+    --panel: rgba(17,24,39,0.88);
+    --card: #121a29;
+    --text: #edf2ff;
+    --muted: #a7b1c4;
+    --line: rgba(255,255,255,0.10);
+    --accent: #6bb6ff;
+    --accent-soft: rgba(107,182,255,0.16);
+    --shadow: 0 20px 60px rgba(0,0,0,0.30);
+  }
+}
+* { box-sizing: border-box; }
+html { font-size: 16px; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans", "Noto Sans", sans-serif; background: radial-gradient(circle at top left, rgba(18,115,234,0.16), transparent 34%), radial-gradient(circle at bottom right, rgba(12,163,121,0.12), transparent 28%), var(--bg); color: var(--text); }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrapper { width: min(960px, calc(100% - 32px)); margin: 0 auto; padding: 32px 0 56px; }
+.hero { background: var(--panel); backdrop-filter: blur(14px); border: 1px solid var(--line); border-radius: 24px; padding: 28px; box-shadow: var(--shadow); }
+.badge { display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); font-size: 0.92rem; font-weight: 700; }
+h1 { margin: 18px 0 10px; font-size: clamp(2rem, 4vw, 3rem); line-height: 1.12; }
+.lead { margin: 0; color: var(--muted); font-size: 1.02rem; line-height: 1.75; }
+.meta { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-top: 22px; }
+.meta-item, .section { background: var(--card); border: 1px solid var(--line); border-radius: 20px; box-shadow: var(--shadow); }
+.meta-item { padding: 16px 18px; }
+.meta-item strong { display: block; font-size: 0.82rem; color: var(--muted); margin-bottom: 8px; }
+.content { display: grid; gap: 16px; margin-top: 20px; }
+.section { padding: 22px; }
+.section h2 { margin: 0 0 12px; font-size: 1.18rem; }
+.section ul { margin: 0; padding-inline-start: 1.2rem; }
+.section li { margin: 0 0 10px; line-height: 1.75; color: var(--muted); white-space: pre-line; }
+.footer-link { margin-top: 18px; display: inline-flex; align-items: center; gap: 8px; color: var(--muted); }
+.index-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; margin-top: 20px; }
+.lang-card { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 20px; box-shadow: var(--shadow); }
+.lang-card h2 { margin: 0 0 12px; font-size: 1.12rem; }
+.link-row { display: flex; flex-wrap: wrap; gap: 10px; }
+.link-chip { display: inline-flex; align-items: center; padding: 10px 14px; border-radius: 999px; background: var(--accent-soft); font-weight: 600; }
+.small { color: var(--muted); font-size: 0.95rem; line-height: 1.7; }
+html[dir="rtl"] body, html[dir="rtl"] .section li, html[dir="rtl"] .lead, html[dir="rtl"] .small { text-align: right; }
+@media (max-width: 640px) { .wrapper { width: min(100% - 20px, 960px); padding: 18px 0 36px; } .hero, .section, .meta-item, .lang-card { border-radius: 18px; } .hero { padding: 22px; } .section { padding: 18px; } }</style>
+</head>
+<body>
+  <main class="wrapper">
+    <section class="hero">
+      <span class="badge">SnapNote</span>
+      <h1>Техническая поддержка SnapNote</h1>
+      <p class="lead">Если при использовании SnapNote возникла проблема или вы хотите отправить предложение либо сообщение об ошибке, свяжитесь с технической поддержкой следующим способом.</p>
+      <div class="meta">
+        <div class="meta-item"><strong>Дата обновления</strong>2026-04-06</div>
+        <div class="meta-item"><strong>Компания</strong>智子科技（三河）有限公司</div>
+        <div class="meta-item"><strong>Email поддержки</strong><a href="mailto:support@geeker.net.cn">support@geeker.net.cn</a></div>
+      </div>
+    </section>
+    <div class="content"><section class="section"><h2>Как связаться с поддержкой</h2><ul><li>Email поддержки: support@geeker.net.cn</li><li>Компания: 智子科技（三河）有限公司</li><li>В теме письма лучше кратко указать суть проблемы, например проблема синхронизации, не импортируется вложение или не удается разблокировать приложение。</li></ul></section>
+<section class="section"><h2>Что желательно указать в обращении</h2><ul><li>Модель устройства iPhone или iPad.</li><li>Версию iOS / iPadOS.</li><li>Версию SnapNote.</li><li>Шаги для воспроизведения проблемы.</li><li>Включена ли синхронизация iCloud, блокировка приложения, а также какие язык и тема выбраны.</li><li>Скриншоты, запись экрана или текст сообщения об ошибке.</li></ul></section>
+<section class="section"><h2>Часто задаваемые вопросы FAQ</h2><ul><li>1. Как изменить язык и тему?
+Откройте настройки SnapNote и перейдите в раздел внешнего вида, где можно выбрать язык приложения, светлую тему, темную тему или следование системной теме.</li><li>2. Что синхронизируется через iCloud, а что нет?
+В текущей версии синхронизируются в основном текстовые данные заметок: заголовок, текст, теги, состояние избранного и архива. Вложения по умолчанию остаются локально и не загружаются в iCloud автоматически.</li><li>3. Почему вложения не синхронизируются автоматически?
+SnapNote ориентирован на локальное хранение. Сохранение вложений на устройстве помогает избежать лишней загрузки, лучше контролировать объем данных и понятнее управлять файлами.</li><li>4. Как работает блокировка приложения через Face ID / Touch ID?
+После включения блокировки в настройках SnapNote будет запрашивать системную биометрическую проверку при открытии приложения или при возврате в него в соответствии с выбранным временем повторной блокировки. Биометрические данные обрабатываются системой и не сохраняются приложением.</li><li>5. Как удалить локальные данные или удалить приложение?
+Ненужные заметки и вложения можно удалить внутри приложения. Если удалить SnapNote с устройства, локальные данные на этом устройстве также будут удалены. Если раньше была включена синхронизация iCloud, синхронизированные текстовые заметки могут оставаться на других синхронизированных устройствах или в вашей среде iCloud, пока вы не удалите их самостоятельно.</li></ul></section>
+<section class="section"><h2>Дополнительно</h2><ul><li>Чем подробнее будет описание, тем быстрее мы сможем помочь с диагностикой и предложить дальнейшие шаги。</li></ul></section></div>
+    <a class="footer-link" href="index.html">&#8592; Вернуться к списку документов</a>
+  </main>
+</body>
+</html>

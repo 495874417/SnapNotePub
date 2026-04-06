@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الدعم الفني لتطبيق SnapNote</title>
+  <style>:root {
+  color-scheme: light dark;
+  --bg: #f4f7fb;
+  --panel: rgba(255,255,255,0.88);
+  --card: #ffffff;
+  --text: #162033;
+  --muted: #5a667a;
+  --line: rgba(22,32,51,0.10);
+  --accent: #1273ea;
+  --accent-soft: rgba(18,115,234,0.10);
+  --shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1724;
+    --panel: rgba(17,24,39,0.88);
+    --card: #121a29;
+    --text: #edf2ff;
+    --muted: #a7b1c4;
+    --line: rgba(255,255,255,0.10);
+    --accent: #6bb6ff;
+    --accent-soft: rgba(107,182,255,0.16);
+    --shadow: 0 20px 60px rgba(0,0,0,0.30);
+  }
+}
+* { box-sizing: border-box; }
+html { font-size: 16px; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans", "Noto Sans", sans-serif; background: radial-gradient(circle at top left, rgba(18,115,234,0.16), transparent 34%), radial-gradient(circle at bottom right, rgba(12,163,121,0.12), transparent 28%), var(--bg); color: var(--text); }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrapper { width: min(960px, calc(100% - 32px)); margin: 0 auto; padding: 32px 0 56px; }
+.hero { background: var(--panel); backdrop-filter: blur(14px); border: 1px solid var(--line); border-radius: 24px; padding: 28px; box-shadow: var(--shadow); }
+.badge { display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); font-size: 0.92rem; font-weight: 700; }
+h1 { margin: 18px 0 10px; font-size: clamp(2rem, 4vw, 3rem); line-height: 1.12; }
+.lead { margin: 0; color: var(--muted); font-size: 1.02rem; line-height: 1.75; }
+.meta { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-top: 22px; }
+.meta-item, .section { background: var(--card); border: 1px solid var(--line); border-radius: 20px; box-shadow: var(--shadow); }
+.meta-item { padding: 16px 18px; }
+.meta-item strong { display: block; font-size: 0.82rem; color: var(--muted); margin-bottom: 8px; }
+.content { display: grid; gap: 16px; margin-top: 20px; }
+.section { padding: 22px; }
+.section h2 { margin: 0 0 12px; font-size: 1.18rem; }
+.section ul { margin: 0; padding-inline-start: 1.2rem; }
+.section li { margin: 0 0 10px; line-height: 1.75; color: var(--muted); white-space: pre-line; }
+.footer-link { margin-top: 18px; display: inline-flex; align-items: center; gap: 8px; color: var(--muted); }
+.index-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; margin-top: 20px; }
+.lang-card { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 20px; box-shadow: var(--shadow); }
+.lang-card h2 { margin: 0 0 12px; font-size: 1.12rem; }
+.link-row { display: flex; flex-wrap: wrap; gap: 10px; }
+.link-chip { display: inline-flex; align-items: center; padding: 10px 14px; border-radius: 999px; background: var(--accent-soft); font-weight: 600; }
+.small { color: var(--muted); font-size: 0.95rem; line-height: 1.7; }
+html[dir="rtl"] body, html[dir="rtl"] .section li, html[dir="rtl"] .lead, html[dir="rtl"] .small { text-align: right; }
+@media (max-width: 640px) { .wrapper { width: min(100% - 20px, 960px); padding: 18px 0 36px; } .hero, .section, .meta-item, .lang-card { border-radius: 18px; } .hero { padding: 22px; } .section { padding: 18px; } }</style>
+</head>
+<body>
+  <main class="wrapper">
+    <section class="hero">
+      <span class="badge">SnapNote</span>
+      <h1>الدعم الفني لتطبيق SnapNote</h1>
+      <p class="lead">إذا واجهت مشكلة أثناء استخدام SnapNote أو أردت إرسال اقتراح أو بلاغ عن خطأ، يمكنك التواصل مع الدعم الفني عبر المعلومات التالية.</p>
+      <div class="meta">
+        <div class="meta-item"><strong>تاريخ التحديث</strong>2026-04-06</div>
+        <div class="meta-item"><strong>الجهة المشغلة</strong>智子科技（三河）有限公司</div>
+        <div class="meta-item"><strong>بريد الدعم</strong><a href="mailto:support@geeker.net.cn">support@geeker.net.cn</a></div>
+      </div>
+    </section>
+    <div class="content"><section class="section"><h2>كيفية التواصل مع الدعم الفني</h2><ul><li>بريد الدعم: support@geeker.net.cn</li><li>الجهة المشغلة: 智子科技（三河）有限公司</li><li>من الأفضل استخدام عنوان واضح للرسالة مثل مشكلة في المزامنة أو فشل في استيراد مرفق أو تعذر فتح قفل التطبيق.</li></ul></section>
+<section class="section"><h2>معلومات يُستحسن تضمينها في البلاغ</h2><ul><li>طراز جهاز iPhone أو iPad المستخدم.</li><li>إصدار iOS / iPadOS.</li><li>إصدار SnapNote.</li><li>خطوات إعادة ظهور المشكلة.</li><li>ما إذا كانت مزامنة iCloud أو قفل التطبيق مفعّلين، وما اللغة أو المظهر المستخدمان.</li><li>لقطات شاشة أو تسجيل شاشة أو نص رسالة الخطأ.</li></ul></section>
+<section class="section"><h2>الأسئلة الشائعة FAQ</h2><ul><li>1. كيف أغيّر اللغة والمظهر؟
+من إعدادات SnapNote انتقل إلى قسم المظهر لتغيير لغة التطبيق واختيار المظهر الفاتح أو الداكن أو اتباع إعدادات النظام.</li><li>2. ماذا تتم مزامنته عبر iCloud وماذا لا تتم مزامنته؟
+في الإصدار الحالي تتم مزامنة بيانات الملاحظات النصية بشكل أساسي، مثل العنوان والنص والوسوم وحالة النجمة وحالة الأرشفة. أما المرفقات فتبقى على الجهاز افتراضيًا ولا تُرفع تلقائيًا إلى iCloud.</li><li>3. لماذا لا تُرفع المرفقات مع المزامنة؟
+تم تصميم SnapNote وفق مبدأ العمل المحلي أولاً. إبقاء المرفقات على الجهاز يقلل عمليات الرفع غير الضرورية، ويجعل استخدام التخزين أكثر وضوحًا، ويسهّل إدارة مكان الملفات.</li><li>4. كيف يعمل قفل التطبيق باستخدام Face ID / Touch ID؟
+عند تفعيل قفل التطبيق من الإعدادات، سيطلب SnapNote التحقق الحيوي من النظام عند فتح التطبيق أو عند العودة إليه وفق توقيت إعادة القفل الذي اخترته. تتم المصادقة بواسطة النظام، ولا يخزن SnapNote بياناتك الحيوية.</li><li>5. كيف أحذف البيانات المحلية أو أزيل التطبيق؟
+يمكنك حذف الملاحظات والمرفقات غير المطلوبة من داخل التطبيق. وإذا أزلت SnapNote من الجهاز فستُحذف البيانات المحلية على ذلك الجهاز أيضًا. وإذا كنت قد فعّلت مزامنة iCloud سابقًا، فقد تبقى الملاحظات النصية المتزامنة على أجهزة أخرى متزامنة أو داخل بيئة iCloud الخاصة بك إلى أن تحذفها بنفسك.</li></ul></section>
+<section class="section"><h2>ملاحظة إضافية</h2><ul><li>كلما كانت التفاصيل التي ترسلها أوضح، كان بإمكاننا المساعدة في تشخيص السبب واقتراح الخطوات التالية بشكل أسرع.</li></ul></section></div>
+    <a class="footer-link" href="index.html">&#8592; العودة إلى فهرس المستندات</a>
+  </main>
+</body>
+</html>

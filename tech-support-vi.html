@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="vi" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hỗ trợ kỹ thuật SnapNote</title>
+  <style>:root {
+  color-scheme: light dark;
+  --bg: #f4f7fb;
+  --panel: rgba(255,255,255,0.88);
+  --card: #ffffff;
+  --text: #162033;
+  --muted: #5a667a;
+  --line: rgba(22,32,51,0.10);
+  --accent: #1273ea;
+  --accent-soft: rgba(18,115,234,0.10);
+  --shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1724;
+    --panel: rgba(17,24,39,0.88);
+    --card: #121a29;
+    --text: #edf2ff;
+    --muted: #a7b1c4;
+    --line: rgba(255,255,255,0.10);
+    --accent: #6bb6ff;
+    --accent-soft: rgba(107,182,255,0.16);
+    --shadow: 0 20px 60px rgba(0,0,0,0.30);
+  }
+}
+* { box-sizing: border-box; }
+html { font-size: 16px; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans", "Noto Sans", sans-serif; background: radial-gradient(circle at top left, rgba(18,115,234,0.16), transparent 34%), radial-gradient(circle at bottom right, rgba(12,163,121,0.12), transparent 28%), var(--bg); color: var(--text); }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrapper { width: min(960px, calc(100% - 32px)); margin: 0 auto; padding: 32px 0 56px; }
+.hero { background: var(--panel); backdrop-filter: blur(14px); border: 1px solid var(--line); border-radius: 24px; padding: 28px; box-shadow: var(--shadow); }
+.badge { display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); font-size: 0.92rem; font-weight: 700; }
+h1 { margin: 18px 0 10px; font-size: clamp(2rem, 4vw, 3rem); line-height: 1.12; }
+.lead { margin: 0; color: var(--muted); font-size: 1.02rem; line-height: 1.75; }
+.meta { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-top: 22px; }
+.meta-item, .section { background: var(--card); border: 1px solid var(--line); border-radius: 20px; box-shadow: var(--shadow); }
+.meta-item { padding: 16px 18px; }
+.meta-item strong { display: block; font-size: 0.82rem; color: var(--muted); margin-bottom: 8px; }
+.content { display: grid; gap: 16px; margin-top: 20px; }
+.section { padding: 22px; }
+.section h2 { margin: 0 0 12px; font-size: 1.18rem; }
+.section ul { margin: 0; padding-inline-start: 1.2rem; }
+.section li { margin: 0 0 10px; line-height: 1.75; color: var(--muted); white-space: pre-line; }
+.footer-link { margin-top: 18px; display: inline-flex; align-items: center; gap: 8px; color: var(--muted); }
+.index-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; margin-top: 20px; }
+.lang-card { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 20px; box-shadow: var(--shadow); }
+.lang-card h2 { margin: 0 0 12px; font-size: 1.12rem; }
+.link-row { display: flex; flex-wrap: wrap; gap: 10px; }
+.link-chip { display: inline-flex; align-items: center; padding: 10px 14px; border-radius: 999px; background: var(--accent-soft); font-weight: 600; }
+.small { color: var(--muted); font-size: 0.95rem; line-height: 1.7; }
+html[dir="rtl"] body, html[dir="rtl"] .section li, html[dir="rtl"] .lead, html[dir="rtl"] .small { text-align: right; }
+@media (max-width: 640px) { .wrapper { width: min(100% - 20px, 960px); padding: 18px 0 36px; } .hero, .section, .meta-item, .lang-card { border-radius: 18px; } .hero { padding: 22px; } .section { padding: 18px; } }</style>
+</head>
+<body>
+  <main class="wrapper">
+    <section class="hero">
+      <span class="badge">SnapNote</span>
+      <h1>Hỗ trợ kỹ thuật SnapNote</h1>
+      <p class="lead">Nếu bạn gặp sự cố khi dùng SnapNote hoặc muốn gửi góp ý và báo lỗi, hãy liên hệ hỗ trợ kỹ thuật theo thông tin dưới đây.</p>
+      <div class="meta">
+        <div class="meta-item"><strong>Ngày cập nhật</strong>2026-04-06</div>
+        <div class="meta-item"><strong>Đơn vị vận hành</strong>智子科技（三河）有限公司</div>
+        <div class="meta-item"><strong>Email hỗ trợ</strong><a href="mailto:support@geeker.net.cn">support@geeker.net.cn</a></div>
+      </div>
+    </section>
+    <div class="content"><section class="section"><h2>Cách liên hệ hỗ trợ kỹ thuật</h2><ul><li>Email hỗ trợ: support@geeker.net.cn</li><li>Đơn vị vận hành: 智子科技（三河）有限公司</li><li>Bạn nên ghi rõ tiêu đề email, ví dụ lỗi đồng bộ, không nhập được tệp đính kèm hoặc không mở được khóa ứng dụng.</li></ul></section>
+<section class="section"><h2>Thông tin nên cung cấp khi phản hồi</h2><ul><li>Mẫu thiết bị iPhone hoặc iPad.</li><li>Phiên bản iOS / iPadOS.</li><li>Phiên bản SnapNote.</li><li>Các bước có thể tái hiện sự cố.</li><li>Bạn có bật đồng bộ iCloud, khóa ứng dụng hay không, và đang dùng ngôn ngữ hoặc giao diện nào.</li><li>Ảnh chụp màn hình, video màn hình hoặc nội dung thông báo lỗi.</li></ul></section>
+<section class="section"><h2>Câu hỏi thường gặp FAQ</h2><ul><li>1. Làm sao để đổi ngôn ngữ và giao diện?
+Trong phần cài đặt của SnapNote, vào mục giao diện để thay đổi ngôn ngữ ứng dụng và chọn giao diện sáng, tối hoặc theo hệ thống.</li><li>2. iCloud đồng bộ những gì và không đồng bộ những gì?
+Phiên bản hiện tại chủ yếu đồng bộ nội dung ghi chú dạng văn bản gồm tiêu đề, nội dung, thẻ, trạng thái gắn sao và trạng thái lưu trữ. Tệp đính kèm mặc định vẫn ở trên thiết bị và không tự động tải lên iCloud.</li><li>3. Vì sao tệp đính kèm không tự động đồng bộ?
+SnapNote được thiết kế theo hướng ưu tiên cục bộ. Giữ tệp đính kèm trên thiết bị giúp giảm tải lên không cần thiết, dễ kiểm soát dung lượng và quản lý vị trí tệp rõ ràng hơn.</li><li>4. Khóa ứng dụng bằng Face ID / Touch ID hoạt động thế nào?
+Khi bạn bật khóa ứng dụng trong cài đặt, SnapNote sẽ yêu cầu xác thực sinh trắc học của hệ thống khi mở ứng dụng hoặc khi quay lại ứng dụng theo thời gian khóa lại mà bạn đã chọn. Dữ liệu sinh trắc học do hệ thống xử lý và không được SnapNote lưu lại.</li><li>5. Làm sao để xóa dữ liệu cục bộ hoặc gỡ ứng dụng?
+Bạn có thể xóa ghi chú và tệp đính kèm không cần thiết trong ứng dụng. Nếu gỡ SnapNote khỏi thiết bị, dữ liệu cục bộ trên thiết bị đó cũng sẽ bị xóa. Nếu trước đó bạn đã bật đồng bộ iCloud, các ghi chú văn bản đã đồng bộ có thể vẫn còn trên các thiết bị đã đồng bộ khác hoặc trong môi trường iCloud của bạn cho đến khi bạn tự xóa chúng.</li></ul></section>
+<section class="section"><h2>Ghi chú thêm</h2><ul><li>Thông tin càng đầy đủ, chúng tôi càng dễ hỗ trợ bạn kiểm tra nguyên nhân và đề xuất cách xử lý。</li></ul></section></div>
+    <a class="footer-link" href="index.html">&#8592; Quay lại trang chỉ mục</a>
+  </main>
+</body>
+</html>

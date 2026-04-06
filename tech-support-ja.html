@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SnapNote 技術サポート</title>
+  <style>:root {
+  color-scheme: light dark;
+  --bg: #f4f7fb;
+  --panel: rgba(255,255,255,0.88);
+  --card: #ffffff;
+  --text: #162033;
+  --muted: #5a667a;
+  --line: rgba(22,32,51,0.10);
+  --accent: #1273ea;
+  --accent-soft: rgba(18,115,234,0.10);
+  --shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1724;
+    --panel: rgba(17,24,39,0.88);
+    --card: #121a29;
+    --text: #edf2ff;
+    --muted: #a7b1c4;
+    --line: rgba(255,255,255,0.10);
+    --accent: #6bb6ff;
+    --accent-soft: rgba(107,182,255,0.16);
+    --shadow: 0 20px 60px rgba(0,0,0,0.30);
+  }
+}
+* { box-sizing: border-box; }
+html { font-size: 16px; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans", "Noto Sans", sans-serif; background: radial-gradient(circle at top left, rgba(18,115,234,0.16), transparent 34%), radial-gradient(circle at bottom right, rgba(12,163,121,0.12), transparent 28%), var(--bg); color: var(--text); }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrapper { width: min(960px, calc(100% - 32px)); margin: 0 auto; padding: 32px 0 56px; }
+.hero { background: var(--panel); backdrop-filter: blur(14px); border: 1px solid var(--line); border-radius: 24px; padding: 28px; box-shadow: var(--shadow); }
+.badge { display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); font-size: 0.92rem; font-weight: 700; }
+h1 { margin: 18px 0 10px; font-size: clamp(2rem, 4vw, 3rem); line-height: 1.12; }
+.lead { margin: 0; color: var(--muted); font-size: 1.02rem; line-height: 1.75; }
+.meta { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-top: 22px; }
+.meta-item, .section { background: var(--card); border: 1px solid var(--line); border-radius: 20px; box-shadow: var(--shadow); }
+.meta-item { padding: 16px 18px; }
+.meta-item strong { display: block; font-size: 0.82rem; color: var(--muted); margin-bottom: 8px; }
+.content { display: grid; gap: 16px; margin-top: 20px; }
+.section { padding: 22px; }
+.section h2 { margin: 0 0 12px; font-size: 1.18rem; }
+.section ul { margin: 0; padding-inline-start: 1.2rem; }
+.section li { margin: 0 0 10px; line-height: 1.75; color: var(--muted); white-space: pre-line; }
+.footer-link { margin-top: 18px; display: inline-flex; align-items: center; gap: 8px; color: var(--muted); }
+.index-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; margin-top: 20px; }
+.lang-card { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 20px; box-shadow: var(--shadow); }
+.lang-card h2 { margin: 0 0 12px; font-size: 1.12rem; }
+.link-row { display: flex; flex-wrap: wrap; gap: 10px; }
+.link-chip { display: inline-flex; align-items: center; padding: 10px 14px; border-radius: 999px; background: var(--accent-soft); font-weight: 600; }
+.small { color: var(--muted); font-size: 0.95rem; line-height: 1.7; }
+html[dir="rtl"] body, html[dir="rtl"] .section li, html[dir="rtl"] .lead, html[dir="rtl"] .small { text-align: right; }
+@media (max-width: 640px) { .wrapper { width: min(100% - 20px, 960px); padding: 18px 0 36px; } .hero, .section, .meta-item, .lang-card { border-radius: 18px; } .hero { padding: 22px; } .section { padding: 18px; } }</style>
+</head>
+<body>
+  <main class="wrapper">
+    <section class="hero">
+      <span class="badge">SnapNote</span>
+      <h1>SnapNote 技術サポート</h1>
+      <p class="lead">SnapNote の利用中に問題が発生した場合や、提案や不具合情報を送りたい場合は、以下の方法で技術サポートへご連絡ください。</p>
+      <div class="meta">
+        <div class="meta-item"><strong>更新日</strong>2026-04-06</div>
+        <div class="meta-item"><strong>運営会社</strong>智子科技（三河）有限公司</div>
+        <div class="meta-item"><strong>サポートメール</strong><a href="mailto:support@geeker.net.cn">support@geeker.net.cn</a></div>
+      </div>
+    </section>
+    <div class="content"><section class="section"><h2>技術サポートへの連絡方法</h2><ul><li>サポートメール：support@geeker.net.cn</li><li>運営会社：智子科技（三河）有限公司</li><li>件名には、同期の問題、添付の読み込み失敗、アプリロックを解除できない、など内容が分かる説明を入れてください。</li></ul></section>
+<section class="section"><h2>連絡時にあると助かる情報</h2><ul><li>使用している iPhone または iPad の機種名。</li><li>iOS / iPadOS のバージョン。</li><li>SnapNote のバージョン。</li><li>問題が起きるまでの再現手順。</li><li>iCloud 同期やアプリロックを有効にしているか、現在の言語やテーマ設定。</li><li>スクリーンショット、画面収録、表示されたエラーメッセージ。</li></ul></section>
+<section class="section"><h2>よくある質問 FAQ</h2><ul><li>1. 言語やテーマはどこで変更できますか。
+SnapNote の設定にある外観関連ページで、アプリ言語とライト、ダーク、またはシステム追従のテーマを変更できます。</li><li>2. iCloud 同期では何が同期され、何が同期されませんか。
+現行バージョンでは、タイトル、本文、タグ、お気に入り状態、アーカイブ状態などのテキストノート関連情報が主に同期されます。添付ファイルは初期設定で端末内に保持され、iCloud へ自動アップロードされません。</li><li>3. なぜ添付ファイルは自動同期されないのですか。
+SnapNote はローカルファースト設計です。添付ファイルを端末に保持することで、不要なアップロードを避け、保存容量を管理しやすくし、ファイルの所在を明確にできます。</li><li>4. Face ID / Touch ID のアプリロックはどのように動作しますか。
+設定でアプリロックを有効にすると、アプリ起動時または再ロック条件に応じてアプリへ戻ったときに、システムの生体認証が求められます。認証処理は OS が行い、SnapNote が生体認証データを保存することはありません。</li><li>5. ローカルデータの削除やアンインストールはどうすればよいですか。
+不要なノートや添付は App 内で削除できます。端末から SnapNote を削除すると、その端末上のローカルデータも削除されます。iCloud 同期を有効にしていた場合、同期済みのテキストノートは、削除するまで他の同期端末や iCloud 環境に残ることがあります。</li></ul></section>
+<section class="section"><h2>補足</h2><ul><li>ご提供いただいた情報をもとに、できる限り原因の切り分けと改善案の案内を行います。</li></ul></section></div>
+    <a class="footer-link" href="index.html">&#8592; ドキュメント一覧へ戻る</a>
+  </main>
+</body>
+</html>

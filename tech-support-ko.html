@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SnapNote 기술 지원</title>
+  <style>:root {
+  color-scheme: light dark;
+  --bg: #f4f7fb;
+  --panel: rgba(255,255,255,0.88);
+  --card: #ffffff;
+  --text: #162033;
+  --muted: #5a667a;
+  --line: rgba(22,32,51,0.10);
+  --accent: #1273ea;
+  --accent-soft: rgba(18,115,234,0.10);
+  --shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1724;
+    --panel: rgba(17,24,39,0.88);
+    --card: #121a29;
+    --text: #edf2ff;
+    --muted: #a7b1c4;
+    --line: rgba(255,255,255,0.10);
+    --accent: #6bb6ff;
+    --accent-soft: rgba(107,182,255,0.16);
+    --shadow: 0 20px 60px rgba(0,0,0,0.30);
+  }
+}
+* { box-sizing: border-box; }
+html { font-size: 16px; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans", "Noto Sans", sans-serif; background: radial-gradient(circle at top left, rgba(18,115,234,0.16), transparent 34%), radial-gradient(circle at bottom right, rgba(12,163,121,0.12), transparent 28%), var(--bg); color: var(--text); }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrapper { width: min(960px, calc(100% - 32px)); margin: 0 auto; padding: 32px 0 56px; }
+.hero { background: var(--panel); backdrop-filter: blur(14px); border: 1px solid var(--line); border-radius: 24px; padding: 28px; box-shadow: var(--shadow); }
+.badge { display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); font-size: 0.92rem; font-weight: 700; }
+h1 { margin: 18px 0 10px; font-size: clamp(2rem, 4vw, 3rem); line-height: 1.12; }
+.lead { margin: 0; color: var(--muted); font-size: 1.02rem; line-height: 1.75; }
+.meta { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-top: 22px; }
+.meta-item, .section { background: var(--card); border: 1px solid var(--line); border-radius: 20px; box-shadow: var(--shadow); }
+.meta-item { padding: 16px 18px; }
+.meta-item strong { display: block; font-size: 0.82rem; color: var(--muted); margin-bottom: 8px; }
+.content { display: grid; gap: 16px; margin-top: 20px; }
+.section { padding: 22px; }
+.section h2 { margin: 0 0 12px; font-size: 1.18rem; }
+.section ul { margin: 0; padding-inline-start: 1.2rem; }
+.section li { margin: 0 0 10px; line-height: 1.75; color: var(--muted); white-space: pre-line; }
+.footer-link { margin-top: 18px; display: inline-flex; align-items: center; gap: 8px; color: var(--muted); }
+.index-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; margin-top: 20px; }
+.lang-card { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 20px; box-shadow: var(--shadow); }
+.lang-card h2 { margin: 0 0 12px; font-size: 1.12rem; }
+.link-row { display: flex; flex-wrap: wrap; gap: 10px; }
+.link-chip { display: inline-flex; align-items: center; padding: 10px 14px; border-radius: 999px; background: var(--accent-soft); font-weight: 600; }
+.small { color: var(--muted); font-size: 0.95rem; line-height: 1.7; }
+html[dir="rtl"] body, html[dir="rtl"] .section li, html[dir="rtl"] .lead, html[dir="rtl"] .small { text-align: right; }
+@media (max-width: 640px) { .wrapper { width: min(100% - 20px, 960px); padding: 18px 0 36px; } .hero, .section, .meta-item, .lang-card { border-radius: 18px; } .hero { padding: 22px; } .section { padding: 18px; } }</style>
+</head>
+<body>
+  <main class="wrapper">
+    <section class="hero">
+      <span class="badge">SnapNote</span>
+      <h1>SnapNote 기술 지원</h1>
+      <p class="lead">SnapNote 사용 중 문제가 발생했거나 제안 및 오류 정보를 보내고 싶다면 아래 방법으로 기술 지원에 문의해 주세요。</p>
+      <div class="meta">
+        <div class="meta-item"><strong>업데이트 날짜</strong>2026-04-06</div>
+        <div class="meta-item"><strong>운영사</strong>智子科技（三河）有限公司</div>
+        <div class="meta-item"><strong>지원 이메일</strong><a href="mailto:support@geeker.net.cn">support@geeker.net.cn</a></div>
+      </div>
+    </section>
+    <div class="content"><section class="section"><h2>기술 지원 문의 방법</h2><ul><li>지원 이메일: support@geeker.net.cn</li><li>운영사: 智子科技（三河）有限公司</li><li>메일 제목에는 동기화 문제, 첨부 가져오기 실패, 앱 잠금 해제 불가처럼 문제를 알아보기 쉬운 설명을 적어 주세요。</li></ul></section>
+<section class="section"><h2>문의 시 함께 보내면 좋은 정보</h2><ul><li>사용 중인 iPhone 또는 iPad 기기 모델.</li><li>iOS / iPadOS 버전.</li><li>SnapNote 버전.</li><li>문제가 발생하기까지의 재현 단계.</li><li>iCloud 동기화나 앱 잠금 사용 여부, 현재 언어 및 테마 설정.</li><li>스크린샷, 화면 녹화, 오류 메시지 텍스트.</li></ul></section>
+<section class="section"><h2>자주 묻는 질문 FAQ</h2><ul><li>1. 언어와 테마는 어떻게 변경하나요?
+SnapNote 설정의 화면 표시 관련 페이지에서 앱 언어와 라이트, 다크 또는 시스템 따르기 테마를 변경할 수 있습니다.</li><li>2. iCloud 동기화는 무엇을 동기화하고 무엇은 동기화하지 않나요?
+현재 버전은 제목, 본문, 태그, 즐겨찾기 상태, 보관 상태 등 텍스트 메모 관련 정보를 주로 동기화합니다. 첨부 파일은 기본적으로 기기에 남아 있으며 iCloud로 자동 업로드되지 않습니다.</li><li>3. 왜 첨부 파일은 자동으로 동기화되지 않나요?
+SnapNote는 로컬 우선 앱입니다. 첨부 파일을 기기에 보관하면 불필요한 업로드를 줄이고 저장 공간 사용을 예측하기 쉬우며, 파일 위치를 더 명확히 관리할 수 있습니다.</li><li>4. Face ID / Touch ID 앱 잠금은 어떻게 동작하나요?
+설정에서 앱 잠금을 켜면 앱을 열 때 또는 사용자가 정한 재잠금 시점에 앱으로 돌아올 때 시스템 생체 인증을 요청합니다. 인증은 시스템이 처리하며 SnapNote는 생체 정보를 저장하지 않습니다.</li><li>5. 로컬 데이터를 삭제하거나 앱을 제거하려면 어떻게 하나요?
+앱 안에서 필요 없는 메모와 첨부 파일을 삭제할 수 있습니다. 기기에서 SnapNote를 제거하면 해당 기기의 로컬 데이터도 함께 삭제됩니다. iCloud 동기화를 켰던 경우 동기화된 텍스트 메모는 사용자가 삭제할 때까지 다른 동기화 기기나 iCloud 환경에 남아 있을 수 있습니다.</li></ul></section>
+<section class="section"><h2>추가 안내</h2><ul><li>보내주신 정보를 바탕으로 원인 파악과 해결 방향을 최대한 빠르게 안내하겠습니다。</li></ul></section></div>
+    <a class="footer-link" href="index.html">&#8592; 문서 목록으로 돌아가기</a>
+  </main>
+</body>
+</html>

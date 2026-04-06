@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="th" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>นโยบายความเป็นส่วนตัวของ SnapNote</title>
+  <style>:root {
+  color-scheme: light dark;
+  --bg: #f4f7fb;
+  --panel: rgba(255,255,255,0.88);
+  --card: #ffffff;
+  --text: #162033;
+  --muted: #5a667a;
+  --line: rgba(22,32,51,0.10);
+  --accent: #1273ea;
+  --accent-soft: rgba(18,115,234,0.10);
+  --shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1724;
+    --panel: rgba(17,24,39,0.88);
+    --card: #121a29;
+    --text: #edf2ff;
+    --muted: #a7b1c4;
+    --line: rgba(255,255,255,0.10);
+    --accent: #6bb6ff;
+    --accent-soft: rgba(107,182,255,0.16);
+    --shadow: 0 20px 60px rgba(0,0,0,0.30);
+  }
+}
+* { box-sizing: border-box; }
+html { font-size: 16px; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans", "Noto Sans", sans-serif; background: radial-gradient(circle at top left, rgba(18,115,234,0.16), transparent 34%), radial-gradient(circle at bottom right, rgba(12,163,121,0.12), transparent 28%), var(--bg); color: var(--text); }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrapper { width: min(960px, calc(100% - 32px)); margin: 0 auto; padding: 32px 0 56px; }
+.hero { background: var(--panel); backdrop-filter: blur(14px); border: 1px solid var(--line); border-radius: 24px; padding: 28px; box-shadow: var(--shadow); }
+.badge { display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); font-size: 0.92rem; font-weight: 700; }
+h1 { margin: 18px 0 10px; font-size: clamp(2rem, 4vw, 3rem); line-height: 1.12; }
+.lead { margin: 0; color: var(--muted); font-size: 1.02rem; line-height: 1.75; }
+.meta { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-top: 22px; }
+.meta-item, .section { background: var(--card); border: 1px solid var(--line); border-radius: 20px; box-shadow: var(--shadow); }
+.meta-item { padding: 16px 18px; }
+.meta-item strong { display: block; font-size: 0.82rem; color: var(--muted); margin-bottom: 8px; }
+.content { display: grid; gap: 16px; margin-top: 20px; }
+.section { padding: 22px; }
+.section h2 { margin: 0 0 12px; font-size: 1.18rem; }
+.section ul { margin: 0; padding-inline-start: 1.2rem; }
+.section li { margin: 0 0 10px; line-height: 1.75; color: var(--muted); white-space: pre-line; }
+.footer-link { margin-top: 18px; display: inline-flex; align-items: center; gap: 8px; color: var(--muted); }
+.index-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; margin-top: 20px; }
+.lang-card { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 20px; box-shadow: var(--shadow); }
+.lang-card h2 { margin: 0 0 12px; font-size: 1.12rem; }
+.link-row { display: flex; flex-wrap: wrap; gap: 10px; }
+.link-chip { display: inline-flex; align-items: center; padding: 10px 14px; border-radius: 999px; background: var(--accent-soft); font-weight: 600; }
+.small { color: var(--muted); font-size: 0.95rem; line-height: 1.7; }
+html[dir="rtl"] body, html[dir="rtl"] .section li, html[dir="rtl"] .lead, html[dir="rtl"] .small { text-align: right; }
+@media (max-width: 640px) { .wrapper { width: min(100% - 20px, 960px); padding: 18px 0 36px; } .hero, .section, .meta-item, .lang-card { border-radius: 18px; } .hero { padding: 22px; } .section { padding: 18px; } }</style>
+</head>
+<body>
+  <main class="wrapper">
+    <section class="hero">
+      <span class="badge">SnapNote</span>
+      <h1>นโยบายความเป็นส่วนตัวของ SnapNote</h1>
+      <p class="lead">SnapNote เป็นแอปจดบันทึกแบบ local-first ที่เรียบง่ายและน้ำหนักเบา โดยค่าเริ่มต้น เนื้อหาบันทึกและไฟล์แนบจะถูกเก็บไว้บนอุปกรณ์ของคุณ และสามารถใช้ความสามารถหลักของแอปได้โดยไม่ต้องมีบัญชีผู้ใช้。</p>
+      <div class="meta">
+        <div class="meta-item"><strong>วันที่อัปเดต</strong>2026-04-06</div>
+        <div class="meta-item"><strong>ผู้ให้บริการ</strong>智子科技（三河）有限公司</div>
+        <div class="meta-item"><strong>อีเมลฝ่ายสนับสนุน</strong><a href="mailto:support@geeker.net.cn">support@geeker.net.cn</a></div>
+      </div>
+    </section>
+    <div class="content"><section class="section"><h2>การจัดเก็บข้อมูลแบบ local-first</h2><ul><li>SnapNote จะเก็บข้อมูลบันทึกไว้บนอุปกรณ์ของคุณเป็นค่าเริ่มต้น เพื่อให้คุณยังสามารถบันทึก จัดระเบียบ และเปิดดูข้อมูลได้แม้ไม่มีอินเทอร์เน็ต。</li><li>ข้อมูลหลักในเวอร์ชันปัจจุบันรวมถึงชื่อเรื่อง เนื้อหา แท็ก สถานะติดดาว สถานะเก็บถาวร และการตั้งค่าในเครื่องที่เกี่ยวข้อง。</li></ul></section>
+<section class="section"><h2>การซิงก์ iCloud แบบเลือกเปิดได้</h2><ul><li>การซิงก์ iCloud เป็นความสามารถเสริม และจะถูกใช้งานก็ต่อเมื่อคุณเปิดใช้งานด้วยตัวเองเท่านั้น。</li><li>ในเวอร์ชันปัจจุบัน สิ่งที่ซิงก์หลักคือข้อมูลบันทึกแบบข้อความ เช่น ชื่อเรื่อง เนื้อหา แท็ก สถานะติดดาว และสถานะเก็บถาวร。</li><li>หากคุณไม่เปิด iCloud การซิงก์จะไม่เริ่มทำงาน และแอปจะยังทำงานในโหมดเก็บข้อมูลในเครื่องต่อไป。</li></ul></section>
+<section class="section"><h2>การจัดการไฟล์แนบ</h2><ul><li>รูปภาพ เอกสาร และไฟล์แนบอื่น ๆ จะถูกเก็บไว้บนอุปกรณ์เป็นค่าเริ่มต้น และจะไม่อัปโหลดไปยัง iCloud โดยอัตโนมัติ。</li><li>แนวทางนี้ช่วยคงประสบการณ์แบบ local-first และทำให้คุณควบคุมพื้นที่จัดเก็บ พฤติกรรมการอัปโหลด และการใช้เครือข่ายได้ชัดเจนยิ่งขึ้น。</li></ul></section>
+<section class="section"><h2>วัตถุประสงค์ของสิทธิ์การเข้าถึง</h2><ul><li>กล้องใช้ถ่ายภาพและเพิ่มภาพเป็นไฟล์แนบภายในเครื่องให้กับบันทึกปัจจุบัน。</li><li>รูปภาพใช้เลือกภาพจากคลังรูปภาพของระบบและเพิ่มเป็นไฟล์แนบให้บันทึก。</li><li>ไฟล์ใช้นำเข้าเฉพาะไฟล์ที่คุณเลือกเองผ่านตัวเลือกไฟล์ของระบบ โดย SnapNote จะไม่สแกนไฟล์ของคุณในเบื้องหลัง。</li><li>การแจ้งเตือนใช้สำหรับการเตือน การทบทวนย้อนหลัง หรือฟังก์ชันการแจ้งเตือนที่เกี่ยวข้อง โดยแอปจะไม่ร้องขอทุกสิทธิ์พร้อมกันตั้งแต่เปิดครั้งแรก。</li><li>Face ID / Touch ID ใช้เปิดการล็อกแอปเพื่อปกป้องการเข้าถึงบันทึกบนอุปกรณ์ ข้อมูลชีวมิติถูกประมวลผลโดยระบบ และ SnapNote จะไม่อ่านหรือเก็บข้อมูลใบหน้าหรือลายนิ้วมือของคุณ。</li></ul></section>
+<section class="section"><h2>ขอสิทธิ์เมื่อจำเป็นเท่านั้น</h2><ul><li>SnapNote จะไม่ขอสิทธิ์ทั้งหมดพร้อมกันเมื่อเปิดแอปครั้งแรก。</li><li>ระบบจะขอสิทธิ์เฉพาะเมื่อคุณใช้ฟังก์ชันที่เกี่ยวข้อง เช่น ถ่ายภาพ นำเข้ารูป เปิดการเตือน หรือเปิดการล็อกแอป。</li></ul></section>
+<section class="section"><h2>การควบคุมของผู้ใช้</h2><ul><li>คุณสามารถปิดสิทธิ์กล้อง รูปภาพ การแจ้งเตือน หรือชีวมิติได้ทุกเมื่อจากการตั้งค่าระบบ。</li><li>คุณยังสามารถปิดการซิงก์ iCloud ปิดการล็อกแอป หรือ ลบบันทึกและไฟล์แนบในตัวแอปได้ตามต้องการ。</li></ul></section>
+<section class="section"><h2>การแบ่งปันและการขายข้อมูล</h2><ul><li>SnapNote จะไม่ขายข้อมูลส่วนบุคคลของคุณ。</li><li>เวอร์ชันปัจจุบันยึดแนวทาง local-first และไม่ได้อาศัยระบบโฆษณาหรือระบบบัญชีผู้ใช้เป็นเงื่อนไขในการใช้ความสามารถหลักของแอป。</li></ul></section>
+<section class="section"><h2>ติดต่อเรา</h2><ul><li>หากคุณมีคำถามเกี่ยวกับนโยบายนี้หรือการจัดการข้อมูลของ SnapNote โปรดติดต่อ support@geeker.net.cn。</li></ul></section></div>
+    <a class="footer-link" href="index.html">&#8592; กลับไปยังดัชนีเอกสาร</a>
+  </main>
+</body>
+</html>

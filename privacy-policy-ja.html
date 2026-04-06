@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SnapNote プライバシーポリシー</title>
+  <style>:root {
+  color-scheme: light dark;
+  --bg: #f4f7fb;
+  --panel: rgba(255,255,255,0.88);
+  --card: #ffffff;
+  --text: #162033;
+  --muted: #5a667a;
+  --line: rgba(22,32,51,0.10);
+  --accent: #1273ea;
+  --accent-soft: rgba(18,115,234,0.10);
+  --shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1724;
+    --panel: rgba(17,24,39,0.88);
+    --card: #121a29;
+    --text: #edf2ff;
+    --muted: #a7b1c4;
+    --line: rgba(255,255,255,0.10);
+    --accent: #6bb6ff;
+    --accent-soft: rgba(107,182,255,0.16);
+    --shadow: 0 20px 60px rgba(0,0,0,0.30);
+  }
+}
+* { box-sizing: border-box; }
+html { font-size: 16px; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans", "Noto Sans", sans-serif; background: radial-gradient(circle at top left, rgba(18,115,234,0.16), transparent 34%), radial-gradient(circle at bottom right, rgba(12,163,121,0.12), transparent 28%), var(--bg); color: var(--text); }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrapper { width: min(960px, calc(100% - 32px)); margin: 0 auto; padding: 32px 0 56px; }
+.hero { background: var(--panel); backdrop-filter: blur(14px); border: 1px solid var(--line); border-radius: 24px; padding: 28px; box-shadow: var(--shadow); }
+.badge { display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); font-size: 0.92rem; font-weight: 700; }
+h1 { margin: 18px 0 10px; font-size: clamp(2rem, 4vw, 3rem); line-height: 1.12; }
+.lead { margin: 0; color: var(--muted); font-size: 1.02rem; line-height: 1.75; }
+.meta { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-top: 22px; }
+.meta-item, .section { background: var(--card); border: 1px solid var(--line); border-radius: 20px; box-shadow: var(--shadow); }
+.meta-item { padding: 16px 18px; }
+.meta-item strong { display: block; font-size: 0.82rem; color: var(--muted); margin-bottom: 8px; }
+.content { display: grid; gap: 16px; margin-top: 20px; }
+.section { padding: 22px; }
+.section h2 { margin: 0 0 12px; font-size: 1.18rem; }
+.section ul { margin: 0; padding-inline-start: 1.2rem; }
+.section li { margin: 0 0 10px; line-height: 1.75; color: var(--muted); white-space: pre-line; }
+.footer-link { margin-top: 18px; display: inline-flex; align-items: center; gap: 8px; color: var(--muted); }
+.index-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; margin-top: 20px; }
+.lang-card { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 20px; box-shadow: var(--shadow); }
+.lang-card h2 { margin: 0 0 12px; font-size: 1.12rem; }
+.link-row { display: flex; flex-wrap: wrap; gap: 10px; }
+.link-chip { display: inline-flex; align-items: center; padding: 10px 14px; border-radius: 999px; background: var(--accent-soft); font-weight: 600; }
+.small { color: var(--muted); font-size: 0.95rem; line-height: 1.7; }
+html[dir="rtl"] body, html[dir="rtl"] .section li, html[dir="rtl"] .lead, html[dir="rtl"] .small { text-align: right; }
+@media (max-width: 640px) { .wrapper { width: min(100% - 20px, 960px); padding: 18px 0 36px; } .hero, .section, .meta-item, .lang-card { border-radius: 18px; } .hero { padding: 22px; } .section { padding: 18px; } }</style>
+</head>
+<body>
+  <main class="wrapper">
+    <section class="hero">
+      <span class="badge">SnapNote</span>
+      <h1>SnapNote プライバシーポリシー</h1>
+      <p class="lead">SnapNote は、ローカルファーストで軽量なノートアプリです。初期状態では、ノート内容と添付ファイルは端末内に保存され、主要な記録機能はアカウント登録なしで利用できます。</p>
+      <div class="meta">
+        <div class="meta-item"><strong>更新日</strong>2026-04-06</div>
+        <div class="meta-item"><strong>運営会社</strong>智子科技（三河）有限公司</div>
+        <div class="meta-item"><strong>サポートメール</strong><a href="mailto:support@geeker.net.cn">support@geeker.net.cn</a></div>
+      </div>
+    </section>
+    <div class="content"><section class="section"><h2>ローカルファーストと保存方法</h2><ul><li>SnapNote は、ノートデータを初期設定で端末本体に保存し、オフラインでも記録、整理、閲覧ができるよう設計されています。</li><li>現行バージョンの主なデータには、タイトル、本文、タグ、お気に入り状態、アーカイブ状態、および関連するローカル設定が含まれます。</li></ul></section>
+<section class="section"><h2>任意の iCloud 同期</h2><ul><li>iCloud 同期は任意機能です。ユーザーが自分で有効にした場合にのみ、SnapNote は Apple の iCloud 機能を利用します。</li><li>現行バージョンで主に同期されるのは、タイトル、本文、タグ、お気に入り状態、アーカイブ状態などのテキストノート関連情報です。</li><li>iCloud を有効にしない場合、同期は開始されず、アプリはローカルモードのまま動作します。</li></ul></section>
+<section class="section"><h2>添付ファイルの扱い</h2><ul><li>画像や書類などの添付ファイルは、初期設定では端末内に保持され、iCloud へ自動アップロードされません。</li><li>これはローカルファーストの体験を維持し、保存容量、アップロード挙動、通信量を把握しやすくするためです。</li></ul></section>
+<section class="section"><h2>権限の利用目的</h2><ul><li>カメラは写真を撮影し、現在のノートにローカル添付として追加するために使用します。</li><li>写真はフォトライブラリから画像を選択し、ノートにローカル添付として追加するために使用します。</li><li>ファイルは、あなたが選択したファイルだけをシステムのファイルピッカー経由で読み込むために使用します。SnapNote がバックグラウンドでファイル全体を走査することはありません。</li><li>通知はリマインダー、振り返り通知、関連する通知機能のために使用します。初回起動時に一括で強制要求することはありません。</li><li>Face ID / Touch ID はアプリロックを有効にし、端末上でノートへのアクセスを保護するために使用します。生体認証データは OS により処理され、SnapNote が指紋や顔情報を取得・保存することはありません。</li></ul></section>
+<section class="section"><h2>必要なときだけ権限を要求</h2><ul><li>SnapNote は、初回起動時にすべての権限をまとめて要求しません。</li><li>撮影、写真の取り込み、通知機能の利用、アプリロックの有効化など、対応する機能を使うときにのみ関連権限を求めます。</li></ul></section>
+<section class="section"><h2>ユーザーによる管理</h2><ul><li>カメラ、写真、通知、生体認証の権限は、いつでもシステム設定から変更できます。</li><li>App 内では iCloud 同期やアプリロックをオフにしたり、必要に応じてノートや添付ファイルを削除したりできます。</li></ul></section>
+<section class="section"><h2>情報の販売について</h2><ul><li>SnapNote は、ユーザーの個人情報を販売しません。</li><li>現行バージョンはローカルファーストを前提としており、広告システムやアカウントシステムを必須条件としていません。</li></ul></section>
+<section class="section"><h2>お問い合わせ</h2><ul><li>本ポリシーまたは SnapNote のデータ取扱いについてご不明点がある場合は、support@geeker.net.cn までご連絡ください。</li></ul></section></div>
+    <a class="footer-link" href="index.html">&#8592; ドキュメント一覧へ戻る</a>
+  </main>
+</body>
+</html>

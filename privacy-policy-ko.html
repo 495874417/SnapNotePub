@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SnapNote 개인정보 처리방침</title>
+  <style>:root {
+  color-scheme: light dark;
+  --bg: #f4f7fb;
+  --panel: rgba(255,255,255,0.88);
+  --card: #ffffff;
+  --text: #162033;
+  --muted: #5a667a;
+  --line: rgba(22,32,51,0.10);
+  --accent: #1273ea;
+  --accent-soft: rgba(18,115,234,0.10);
+  --shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1724;
+    --panel: rgba(17,24,39,0.88);
+    --card: #121a29;
+    --text: #edf2ff;
+    --muted: #a7b1c4;
+    --line: rgba(255,255,255,0.10);
+    --accent: #6bb6ff;
+    --accent-soft: rgba(107,182,255,0.16);
+    --shadow: 0 20px 60px rgba(0,0,0,0.30);
+  }
+}
+* { box-sizing: border-box; }
+html { font-size: 16px; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans", "Noto Sans", sans-serif; background: radial-gradient(circle at top left, rgba(18,115,234,0.16), transparent 34%), radial-gradient(circle at bottom right, rgba(12,163,121,0.12), transparent 28%), var(--bg); color: var(--text); }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrapper { width: min(960px, calc(100% - 32px)); margin: 0 auto; padding: 32px 0 56px; }
+.hero { background: var(--panel); backdrop-filter: blur(14px); border: 1px solid var(--line); border-radius: 24px; padding: 28px; box-shadow: var(--shadow); }
+.badge { display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); font-size: 0.92rem; font-weight: 700; }
+h1 { margin: 18px 0 10px; font-size: clamp(2rem, 4vw, 3rem); line-height: 1.12; }
+.lead { margin: 0; color: var(--muted); font-size: 1.02rem; line-height: 1.75; }
+.meta { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-top: 22px; }
+.meta-item, .section { background: var(--card); border: 1px solid var(--line); border-radius: 20px; box-shadow: var(--shadow); }
+.meta-item { padding: 16px 18px; }
+.meta-item strong { display: block; font-size: 0.82rem; color: var(--muted); margin-bottom: 8px; }
+.content { display: grid; gap: 16px; margin-top: 20px; }
+.section { padding: 22px; }
+.section h2 { margin: 0 0 12px; font-size: 1.18rem; }
+.section ul { margin: 0; padding-inline-start: 1.2rem; }
+.section li { margin: 0 0 10px; line-height: 1.75; color: var(--muted); white-space: pre-line; }
+.footer-link { margin-top: 18px; display: inline-flex; align-items: center; gap: 8px; color: var(--muted); }
+.index-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; margin-top: 20px; }
+.lang-card { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 20px; box-shadow: var(--shadow); }
+.lang-card h2 { margin: 0 0 12px; font-size: 1.12rem; }
+.link-row { display: flex; flex-wrap: wrap; gap: 10px; }
+.link-chip { display: inline-flex; align-items: center; padding: 10px 14px; border-radius: 999px; background: var(--accent-soft); font-weight: 600; }
+.small { color: var(--muted); font-size: 0.95rem; line-height: 1.7; }
+html[dir="rtl"] body, html[dir="rtl"] .section li, html[dir="rtl"] .lead, html[dir="rtl"] .small { text-align: right; }
+@media (max-width: 640px) { .wrapper { width: min(100% - 20px, 960px); padding: 18px 0 36px; } .hero, .section, .meta-item, .lang-card { border-radius: 18px; } .hero { padding: 22px; } .section { padding: 18px; } }</style>
+</head>
+<body>
+  <main class="wrapper">
+    <section class="hero">
+      <span class="badge">SnapNote</span>
+      <h1>SnapNote 개인정보 처리방침</h1>
+      <p class="lead">SnapNote는 로컬 우선 방식의 가볍고 간결한 메모 앱입니다. 기본적으로 메모 내용과 첨부 파일은 기기에 저장되며, 핵심 기록 기능은 계정 없이 사용할 수 있습니다。</p>
+      <div class="meta">
+        <div class="meta-item"><strong>업데이트 날짜</strong>2026-04-06</div>
+        <div class="meta-item"><strong>운영사</strong>智子科技（三河）有限公司</div>
+        <div class="meta-item"><strong>지원 이메일</strong><a href="mailto:support@geeker.net.cn">support@geeker.net.cn</a></div>
+      </div>
+    </section>
+    <div class="content"><section class="section"><h2>로컬 우선 저장</h2><ul><li>SnapNote는 기본적으로 메모 데이터를 사용자의 기기에 저장하여, 오프라인 상태에서도 기록, 정리, 열람이 가능하도록 설계되었습니다.</li><li>현재 버전의 주요 데이터에는 제목, 본문, 태그, 즐겨찾기 상태, 보관 상태 및 관련 로컬 설정이 포함됩니다.</li></ul></section>
+<section class="section"><h2>선택형 iCloud 동기화</h2><ul><li>iCloud 동기화는 선택 기능이며, 사용자가 직접 켠 경우에만 SnapNote가 Apple의 iCloud 기능을 사용합니다.</li><li>현재 버전에서 주로 동기화되는 항목은 제목, 본문, 태그, 즐겨찾기 상태, 보관 상태 등 텍스트 메모 관련 정보입니다.</li><li>iCloud를 켜지 않으면 동기화는 시작되지 않으며 앱은 로컬 모드로 계속 동작합니다.</li></ul></section>
+<section class="section"><h2>첨부 파일 처리</h2><ul><li>이미지와 문서 등의 첨부 파일은 기본적으로 기기에 보관되며 iCloud로 자동 업로드되지 않습니다.</li><li>이 방식은 로컬 우선 경험을 유지하고 저장 용량, 업로드 동작, 네트워크 사용량을 더 명확하게 관리할 수 있도록 돕습니다.</li></ul></section>
+<section class="section"><h2>권한 사용 목적</h2><ul><li>카메라는 사진을 촬영해 현재 메모의 로컬 첨부 파일로 추가할 때 사용합니다.</li><li>사진 권한은 사진 보관함에서 이미지를 선택해 메모에 첨부할 때 사용합니다.</li><li>파일 접근은 시스템 파일 선택기를 통해 사용자가 직접 선택한 파일을 가져올 때 사용합니다. SnapNote가 백그라운드에서 파일을 훑어보지 않습니다.</li><li>알림은 리마인더, 회고 알림 또는 관련 알림 기능에 사용합니다. 첫 실행 시 한꺼번에 강제로 요청하지 않습니다.</li><li>Face ID / Touch ID는 앱 잠금을 켜서 기기 내 메모 접근을 보호하는 데 사용합니다. 생체 정보는 시스템이 처리하며 SnapNote가 지문이나 얼굴 데이터를 읽거나 저장하지 않습니다.</li></ul></section>
+<section class="section"><h2>필요한 시점에만 권한 요청</h2><ul><li>SnapNote는 앱을 처음 열었을 때 모든 권한을 한 번에 요청하지 않습니다.</li><li>촬영, 사진 가져오기, 알림 사용, 앱 잠금 설정처럼 해당 기능을 사용할 때만 관련 권한을 요청합니다.</li></ul></section>
+<section class="section"><h2>사용자 제어</h2><ul><li>카메라, 사진, 알림, 생체 인증 권한은 언제든지 시스템 설정에서 변경할 수 있습니다.</li><li>앱 안에서는 iCloud 동기화와 앱 잠금을 끄거나, 필요에 따라 메모와 첨부 파일을 삭제할 수 있습니다.</li></ul></section>
+<section class="section"><h2>정보 판매 여부</h2><ul><li>SnapNote는 사용자의 개인정보를 판매하지 않습니다.</li><li>현재 버전은 로컬 우선 설계를 따르며, 광고 시스템이나 계정 시스템을 전제로 핵심 메모 기능을 제공하지 않습니다.</li></ul></section>
+<section class="section"><h2>문의하기</h2><ul><li>이 개인정보 처리방침이나 SnapNote의 데이터 처리 방식에 관한 질문이 있으면 support@geeker.net.cn로 연락해 주세요.</li></ul></section></div>
+    <a class="footer-link" href="index.html">&#8592; 문서 목록으로 돌아가기</a>
+  </main>
+</body>
+</html>
